@@ -42,7 +42,7 @@ header h1 {
 .navigation a:hover {
 	font-weight: 700;
 	text-decoration: underline;
-	text-decoration-color: yellow;
+	text-decoration-color: white;
 }
   
 main {
