@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background: #333333;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: 1px;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+
+header h1 {
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.5rem;
+
+}
+	
+.navigation {
+	list-style: none;
+	display: none;
+	flex-wrap: wrap;
+	background-color: #333333;
+	align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    
+}
+
+.navigation li {
+	flex: 1 1 auto;
+    text-align: center;
+}
+
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
+main { 
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.temple-card {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+footer {
+    background: #333333;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 700px) {
+  .header-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding-right: 15px;
+  }
+  nav {
+    width: 100%;
+  }
+
+  .navigation.open {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navigation li {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:500px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    main h2 {
+        grid-column: 1/3;
+    }
+    
+}
+@media screen and (min-width:781px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main h2 {
+        grid-column: 1/4;
+    }
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+	.navigation {
+		flex-direction: row;
+        display: flex;
+	}
+    .navigation.open {
+    flex-direction: row;
+  }
+
+}
+@media (max-width: 780px) {
+  .header-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding-right: 15px;
+  }
+  nav {
+    width: 100%;
+  }
+
+  .navigation.open {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navigation li {
+    width: 100%;
+  }
+}
