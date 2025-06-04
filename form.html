@@ -20,33 +20,36 @@
     </header>
 
     <main>
-        <h2>Product Review</h2>
     <form method="get" action="review.html" class="wf1">
-    <fieldset>
-        <select name="product" required>
+        <fieldset>
+            <legend>Product Review Form</legend>
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
                 <option value="default" selected disabled>Select a Product &#9662;</option>
-        </select>
-         </select>
-        <label>Product Rating</label>
-        <label><input type="radio" name="rating" value="1">☆</label>
-        <label><input type="radio" name="rating" value="2">☆☆</label>
-        <label><input type="radio" name="rating" value="3">☆☆☆</label>
-        <label><input type="radio" name="rating" value="4">☆☆☆☆</label>
-        <label><input type="radio" name="rating" value="5">☆☆☆☆☆</label>
-        </label>
-        <label>Date of Installation: <input type="date" name="InstallationDate"> </label>
-        <label>Which Features did you find useful in the product?</label>
-        <label><input type="checkbox" name="durability" value="yes"> Durability</label>
-        <label><input type="checkbox" name="design" value="yes"> Design</label>
-        <label><input type="checkbox" name="easeofuse" value="yes"> Ease of Use</label>
-        <label><input type="checkbox" name="performance" value="yes"> Performance</label>
-        
-        <label>Written Review (optional)
-        <textarea name ="review" rows = "5" cols = "50" placeholder="Write your review here..."></textarea></label>
+            </select>
 
-        <label>Your Name (Optional)<input type ="text" name="fname"></label>
-        
-    </fieldset>
+            <span><br>Product Rating</span>
+            <label><input type="radio" name="rating" value="1" required>☆</label>
+            <label><input type="radio" name="rating" value="2">☆☆</label>
+            <label><input type="radio" name="rating" value="3">☆☆☆</label>
+            <label><input type="radio" name="rating" value="4">☆☆☆☆</label>
+            <label><input type="radio" name="rating" value="5">☆☆☆☆☆</label>
+
+            <label for="InstallationDate">Date of Installation:</label>
+            <input type="date" id="InstallationDate" name="InstallationDate">
+
+            <span><br>Which Features did you find useful in the product?</span>
+            <label><input type="checkbox" name="features[]" value="durability"> Durability</label>
+            <label><input type="checkbox" name="features[]" value="design"> Design</label>
+            <label><input type="checkbox" name="features[]" value="easeofuse"> Ease of Use</label>
+            <label><input type="checkbox" name="features[]" value="performance"> Performance</label>
+            
+            <label for="review">Written Review (optional)</label>
+            <textarea id="review" name="review" rows="5" cols="50" placeholder="Write your review here..."></textarea>
+
+            <label for="fname">Your Name (Optional)</label>
+            <input type="text" id="fname" name="fname">
+        </fieldset>
         <input type="submit" value="Post Review">
     </form>
         
