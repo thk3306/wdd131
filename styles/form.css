@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background: #333333;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+
+header h1 {
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.5rem;
+
+}
+
+main { 
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius:6px;
+    padding: .5rem 2%;
+}
+
+ .wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+ }
+
+ .wf1 input[type="number"],
+ .wf1 select,
+ .wf1 textarea,
+ .wf1 input[type="date"],
+ .wf1 input[type="text"]{
+    background-color: #eee;
+    display:block;
+    border: solid 1px #ddd;
+    border-radius: 6px;
+    padding:.80rem;
+    color:#555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+ }
+
+ .wf1 input[type="radio"],
+ .wf1 input[type="checkbox"] {
+    margin-right: 6px;
+ }
+
+ .wf1 input[type="submit"]{
+    border:none;
+    background-image: linear-gradient(#3e3f44, #6a6c6f);
+    color: #fff;
+    border-radius:6px;
+    padding: .8rem;
+    width:98%;
+    max-width:400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;;
+ }
+
+footer {
+    background: #333333;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
