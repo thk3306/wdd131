@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/index.js" defer></script>
-    <script src="scripts/food_sights.js" defer></script>
+    <script src="scripts/signupthanks.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,20 +22,22 @@
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Food & Sights</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="sights.html">Sights</a></li>
                     <li><a href="signup.html">Sign Up</a></li>
                 </ul>
             </nav>
         </div>
-    <header>
+    </header>
     <main>
-        <h2>Welcome to Aotearoa</h2>
-        
+        <h2>Thank you for signing up! You have visited <span class="count"></span> times!</h2>
+        <img src="images/nz.webp" alt="Sign Up Image" class="signup-image" loading="lazy">
     </main>
 
     <footer>
         <p>&copy; <span id="year"></span> Emil Roding | Gone New Zealanding</p>
         <p>Last Modified: <span id="lastModified"></span></p>
+        <p>Times Visited: <span class="count"></span></p>
     </footer>
 </body>
 </html>

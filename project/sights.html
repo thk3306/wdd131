@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emil Roding's WDDWDD 131 | Gone New Zealanding Page">
+    <meta name="author" content="Emil's Web Development Class WDD 131 Gone New Zealanding Project">
+    <title>WDD 131 Sights - Emil Roding</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/food_sights.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <img src="images/logo.svg" alt="Gone New Zealanding Logo" id="logo" loading="lazy">
+            <h1>Gone New Zealanding</h1>
+            <button type="button" id="menu" aria-label="Open navigation menu"></button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="sights.html">Sights</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    <header>
+    <main>
+        <div class="food_sights">
+            <h2>Sights</h2>
+            <figure>
+                <a href="https://www.skycityauckland.co.nz/attractions/sky-tower/" target="_blank" rel="noopener">
+                    <img src="images/skytower.webp" alt="SkyTower in Auckland, New Zealand" loading="lazy">
+                    <figcaption>SkyTower</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.churchofjesuschrist.org/temples/details/auckland-new-zealand-temple?lang=eng" target="_blank" rel="noopener">
+                    <img src="images/hero-large.webp" alt="Auckland New Zealand Temple" loading="lazy">
+                    <figcaption>Auckland Temple</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.churchofjesuschrist.org/temples/details/hamilton-new-zealand-temple?lang=eng" target="_blank" rel="noopener">
+                    <img src="images/hamiltontemple.webp" alt="Hamilton New Zealand Temple" loading="lazy">
+                    <figcaption>Hamilton Temple</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.queenstownnz.co.nz/" target="_blank" rel="noopener">
+                    <img src="images/queenstown.webp" alt="Queenstown landscape in New Zealand" loading="lazy">
+                    <figcaption>Queenstown</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.hobbitontours.com/" target="_blank" rel="noopener">
+                    <img src="images/hobbiton.webp" alt="Hobbiton Movie Set in New Zealand" loading="lazy">
+                    <figcaption>Hobbiton</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.newzealand.com/int/feature/ohakune-carrot/" target="_blank" rel="noopener">
+                    <img src="images/carrot.webp" alt="Giant Carrot landmark in Ohakune, New Zealand" loading="lazy">
+                    <figcaption>Giant Carrot</figcaption>
+                </a>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Emil Roding | Gone New Zealanding</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>Times Visited: <span class="count"></span></p>
+    </footer>
+</body>
+</html>

@@ -11,9 +11,25 @@ body {
 }
   
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
+
+figure {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 
 #menu {
     color: white;
@@ -86,6 +102,10 @@ button#menu {
     border-bottom: 5px solid var(--red);
 }
 
+p {
+    text-align: center;
+}
+
 .header-container img {
     max-width: 100px;
     height: auto;
@@ -109,8 +129,91 @@ header h1 {
 main { 
   max-width: 800px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
+}
+
+.food_sights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.food_sights img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.signup {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: none;
+    border-radius:6px;
+    padding: .5rem 2%;
+}
+
+ .wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: .9rem;
+ }
+
+ .wf1 input[type="number"],
+ .wf1 select,
+ .wf1 textarea,
+ .wf1 input[type="date"],
+ .wf1 input[type="text"],
+ .wf1 input[type="email"] {
+    background-color: #eee;
+    display:block;
+    
+    border-radius: 6px;
+    padding:.80rem;
+    color:#555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+ }
+
+ .wf1 legend {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+ }
+
+ .wf1 input[type="radio"],
+ .wf1 input[type="checkbox"] {
+    margin-right: 6px;
+ }
+
+.wf1 input[type="submit"]{
+    background-color: var(--red);
+    color: #fff;
+    border-radius:6px;
+    padding: .8rem;
+    width:98%;
+    max-width:400px;
+    margin-left: 25px;
+    box-shadow: 1px 1px 4px #999;
+    display: block;
+}
+
+.wf1 input[type="submit"]:hover {
+    background-color: var(--color);
+    cursor: pointer;
 }
 
 main h2 {
@@ -133,6 +236,7 @@ main h2 {
 
 .values {
     padding-left: 5px;
+    text-align: left;
 }
 
 .weather {
@@ -183,12 +287,16 @@ footer {
   .navigation li {
     width: 100%;
   }
+  .food_sights {
+    display: block;
+}
 }
 
 @media screen and (min-width:800px){
     main{
         max-width: 100%;
     }
+    
     #menu {
 		display: none;
 	}

@@ -34,7 +34,7 @@ const weatherEmojis = {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    const latitude = -36.8485; // Auckland, NZ
+    const latitude = -36.8485;
     const longitude = 174.7635;
     const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code,wind_speed_10m&timezone=auto`;
 
@@ -98,4 +98,14 @@ const navigation = document.querySelector('.navigation');
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
+});
+
+const countSpans = document.querySelectorAll(".count");
+let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
+
+numVisits++;
+window.localStorage.setItem("numVisits", numVisits);
+
+countSpans.forEach(span => {
+    span.textContent = numVisits;
 });

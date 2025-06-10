@@ -10,7 +10,7 @@ const countSpans = document.querySelectorAll(".count");
 let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
 
 numVisits++;
-window.localStorage.setItem("numVisits", numVisits);
+localStorage.setItem("numVisits", numVisits);
 
 countSpans.forEach(span => {
     span.textContent = numVisits;
