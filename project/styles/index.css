@@ -88,7 +88,6 @@ button#menu {
 
 .navigation a:hover {
 	font-weight: 700;
-	text-decoration: bold;
 	color: var(--red);
 }
 
